@@ -172,7 +172,7 @@ The framework is intended solely to help understand the limitations of static, s
 
 ## Author
 
-**Naba Hanfi**  
+**Varma Disha**  
 Cybersecurity Intern  
 Unified Mentor  
 
