@@ -1,0 +1,51 @@
+Payload Obfuscation & Signature Evasion Framework
+================================================
+
+Objective
+---------
+The goal of this project is to demonstrate how encoding and
+string obfuscation techniques can be used to evade simple
+signature-based malware detection systems.
+
+Test Environment
+----------------
+Tool: Custom Python-based Payload Obfuscation Framework
+Detection Method: Static signature (keyword) scanning
+
+Test Payload
+------------
+powershell download malware
+
+Techniques Tested
+-----------------
+1. Base64 Encoding
+2. XOR Encoding
+3. ROT13 Encoding
+4. Random Noise Insertion
+5. String Splitting & Rejoining
+6. Hex Escape Obfuscation
+
+Results
+-------
+Original Payload            : DETECTED
+Base64 Encoded Payload      : BYPASSED
+XOR Encoded Payload         : BYPASSED
+ROT13 Encoded Payload       : BYPASSED
+Noise Obfuscated Payload   : BYPASSED
+Split & Join Obfuscation    : BYPASSED
+Hex Escaped Payload         : BYPASSED
+
+Analysis
+--------
+The original payload was easily detected because it contained
+clear-text malicious keywords. After applying encoding and
+obfuscation, the same payload no longer matched the static
+signatures, allowing it to bypass detection.
+
+Conclusion
+----------
+This experiment shows that basic signature-based detection
+is not sufficient against modern attackers who routinely
+use encoding and obfuscation. Security systems must use
+behavioral analysis, heuristics, and layered defenses to
+detect such threats effectively.
